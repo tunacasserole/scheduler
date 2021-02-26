@@ -9,6 +9,9 @@ gem 'dotenv'
 gem 'rack-cors'
 gem 'jsonapi-rails'
 
+group :test do
+	gem 'rspec-rails'
+end
 # rails 6 generated gems
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'
