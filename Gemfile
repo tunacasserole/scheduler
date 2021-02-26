@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.2'
 # nucleus gems
 gem 'devise'
+gem 'devise-jwt', '~> 0.7.0'
 
 # rails 6 generated gems
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
