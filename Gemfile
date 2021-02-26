@@ -7,6 +7,7 @@ gem 'devise'
 gem 'devise-jwt', '~> 0.7.0'
 gem 'dotenv'
 gem 'rack-cors'
+gem 'jsonapi-rails'
 
 # rails 6 generated gems
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
