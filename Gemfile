@@ -12,6 +12,7 @@ gem 'jsonapi-rails'
 group :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
+  gem 'faker'
 end
 # rails 6 generated gems
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
