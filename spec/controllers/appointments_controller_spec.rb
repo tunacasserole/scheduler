@@ -8,6 +8,8 @@ describe Api::AppointmentsController, type: :request do
   context 'When the user does not exist' do
     before do
       login_with_api(user)
+      binding.pry
+
       post api_appointments_url, headers: {
         'Authorization': response.headers['Authorization']
       },
@@ -84,10 +86,6 @@ describe Api::AppointmentsController, type: :request do
 
     it 'returns 200' do
       expect(response.status).to eq(200)
-    end
-
-    it 'creates the user' do
-      # expect
     end
 
     it 'creates an appointment' do

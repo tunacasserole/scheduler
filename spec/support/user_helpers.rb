@@ -5,8 +5,9 @@ module UserHelpers
 
   def create_user
     FactoryBot.create(:user,
-			email: Faker::Internet.email,
-			password: Faker::Internet.password
+			email: 'sampleuser@gmail.com',
+			password: 'password123',
+			password_confirmation: 'password123'
 		)
   end
 
