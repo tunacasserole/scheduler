@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_26_213112) do
+ActiveRecord::Schema.define(version: 2021_02_26_214232) do
+
+  create_table "appointments", force: :cascade do |t|
+    t.date "date"
+    t.time "start_time"
+    t.time "end_time"
+    t.string "description"
+    t.string "site_name"
+    t.string "session_type"
+    t.string "facilitator_first_name"
+    t.string "facilitator_last_name"
+    t.string "facilitator_email"
+    t.string "primary_therapist_first_name"
+    t.string "primary_therapist_last_name"
+    t.string "primary_therapist_email"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["id"], name: "index_appointments_on_id", unique: true
+  end
 
   create_table "jwt_denylist", force: :cascade do |t|
     t.string "jti", null: false
